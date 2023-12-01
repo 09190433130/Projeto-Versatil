@@ -1,0 +1,1 @@
+﻿alert("Código ja externo");

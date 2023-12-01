@@ -1,0 +1,20 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+		<p>Quando você insere o campo de entrada, é acionada uma função que define a cor de fundo como amarela.</p>
+		<p>Quando você sai do campo de entrada, é acionada uma função que define a cor do plano de fundo para vermelho.</p>
+		Digite seu nome: <input type="text" id="entrada" onfocus="funcaoFocus()" onblur="funcaoBlur()">
+	<script>
+			function funcaoFocus() {
+		// Muda a for do fundo da entrada de texto para amarelo.
+		document.getElementById("entrada").style.background = "yellow";
+		}
+			function funcaoBlur() {
+		// Muda para vermelho o fundo da entrada de texto quando clica fora da caixa de entrada, onde estava o onfocus
+		document.getElementById("entrada").style.background = "red";
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    <img id="exemplo" onclick="minhaFuncao();" src="sheldon_triste.jpg" width="242" height="204">
+    <p>Mudar a imagem</p>
+    <script type="text/javascript">
+        function minhaFuncao() {
+            var image = document.getElemntById('exemplo');
+            if (image.src.match("feliz")) {
+                image.src = "sheldon_triste.jpg";
+            } else {
+                image.src = "sheldon_feliz.jpg";
+            }
+        }
+    </script>
+</body>
+
+</html>

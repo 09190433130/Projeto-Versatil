@@ -1,0 +1,45 @@
+<html>
+<head>
+<meta charset="utf-8">
+	<script type="text/javascript">
+		function VerificaeSubmete () {
+		var nomeUsuario = document.getElementById ("nomeUsuario");
+		if (nomeUsuario.value.length < 3) {
+		alert ("O nome do usuário deve ter pelo menos 3 caracteres.");
+			return false;
+		}
+		var senha = document.getElementById ("senha");
+		var resenha = document.getElementById ("resenha");
+		if (senha.value.length < 6) {
+		alert ("A senha deve ter pelo menos 6 caracteres!");
+			return false;
+		}
+		if (resenha.value != senha.value) {
+		alert ("As duas senhas são diferentes!");
+			return false;
+		}
+		var aceitaTermos = document.getElementById ("aceitaTermos");
+		if (!aceitaTermos.checked) {
+		alert ("Você deve aceitar o Acordo do Usuário para se registrar!");
+		return false;
+		}
+			return true;
+		}
+	</script>
+</head>
+<body>
+<form id="formulario" method="post" action="#URL de destino após validar corretamente#" onsubmit="return VerificaeSubmete ()">
+		Nome de Usuário: <input type="text" name="nomeUsuario" id="nomeUsuario" />
+		<br />
+		Senha: <input type="password" name="senha" id="senha" />
+		<br />
+		Repita a Senha: <input type="password" name="resenha" id="resenha" />
+		<br /><br />
+		<input type="checkbox" name="aceitaTermos" id="aceitaTermos" />
+		<label for="aceitaTermos"> Eu aceito o acordo de usuário e a Política de Privacidade </label>
+		<br /><br />
+		<input type="submit" value="Cadastrar" />
+</form>
+	
+</body>
+</html>
