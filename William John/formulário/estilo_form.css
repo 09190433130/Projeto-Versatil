@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+body { 
+ font-family: Verdana, Arial, Helvetica, sans-serif; 
+ font-size: 11px;
+ background-color: #f4f5f5;
+ 
+} 
+
+#form1 legend { 
+ color: #333366; 
+ font-size:20px; 
+ 
+} 
+#form1 fieldset{ 
+ padding: 20px 10px 20px 10px; 
+ width: 300px; 
+} 
+#form1 label { 
+ color: #000; 
+ font-size:16px;
+} 
+.linha { 
+ padding-top: 20px; 
+ padding-left: 10px; 
+} 
+.linha2 { 
+ padding-top: 10px; 
+ padding-left: 10px; 
+} 
+ 
+input,select,textarea{ 
+ background-color: #ffffff; 
+}
